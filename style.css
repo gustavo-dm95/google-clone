@@ -1,0 +1,113 @@
+html {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.main-googleinput {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-googleinput > img {
+    height: 18rem;
+    margin-top: 160px;
+}
+
+.main-googleinput input {
+    height: 4.5rem;
+    width: 60rem;
+    border: solid rgb(240, 236, 236) 0.2rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    padding-left: 5rem;
+    background-image: url('./outline_search_black_24dp.png');
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 1.5rem;
+    outline: none;  
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.main-buttons button {
+    height: 4rem;
+    width: 16rem;
+    margin: 0 0.5rem;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    color: rgb(109, 109, 109);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgb(240, 240, 240);
+    height: 5rem;
+    padding: 0 2rem;
+    border-top: solid rgb(224, 224, 224) 0.2rem;
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+}
+
+.footer-sectionleft a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+    margin: 0 2rem;
+}
+
+.footer-sectionright a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+    margin: 0 2rem;
+}
+
+.navbar .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar img {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+/*  1. text align: posiciona todos sus elementos como se indique
+    2. al momento de meter íconos en un input, estos se pueden meter dentro de un div junto con el input para que los links e
+    imagenes o iconos entren dentro del input
