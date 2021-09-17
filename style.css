@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -48,7 +52,8 @@ body {
     background-repeat: no-repeat;
     background-size: 2rem;
     background-position: 1.5rem;
-    outline: none;  
+    outline: none;
+    box-shadow: 0.2rem black;
 }
 
 .main-buttons {
@@ -74,11 +79,11 @@ body {
     font-size: 3rem;
     background-color: rgb(240, 240, 240);
     height: 5rem;
+    width: 100%;
     padding: 0 2rem;
     border-top: solid rgb(224, 224, 224) 0.2rem;
     position: absolute;
     bottom: 0;
-    width: fit-content;
 }
 
 .footer-sectionleft a {
@@ -106,6 +111,11 @@ body {
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
+}
+
+.main-buttons button:hover {
+    cursor: pointer;
+    box-shadow: azure;
 }
 
 /*  1. text align: posiciona todos sus elementos como se indique
