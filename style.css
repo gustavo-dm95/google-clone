@@ -1,13 +1,12 @@
-html {
+* {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     font-size: 62.5%;
-    height: 100%;
-    width: 100%;
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;  
 }
 
 main {
@@ -18,13 +17,14 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 1rem 3rem;
+    padding: 20px;
+    min-width: 320px;
 }
 
 .navbar a {
     text-decoration: none;
     color: rgb(22, 22, 22);
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     margin: 1rem;
 }
 
@@ -33,27 +33,28 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    min-width: 320px;
 }
 
-.main-googleinput > img {
-    height: 18rem;
-    margin-top: 160px;
+.main-googleinput img {
+    height: 100px;
 }
 
 .main-googleinput input {
-    height: 4.5rem;
-    width: 60rem;
-    border: solid rgb(240, 236, 236) 0.2rem;
+    height: 35px;
+    width: 95%;
+    max-width: 600px;
+    border: 1px solid rgb(240, 236, 236);
     border-radius: 3rem;
     margin-bottom: 2rem;
-    font-size: 3rem;
-    padding-left: 5rem;
+    font-size: 1.4rem;
+    padding-left: 30px;
     background-image: url('./outline_search_black_24dp.png');
     background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position: 1.5rem;
+    background-size: 15px;
+    background-position: 15px;
     outline: none;
-    box-shadow: 0.2rem black;
 }
 
 .main-buttons {
@@ -62,14 +63,22 @@ main {
 }
 
 .main-buttons button {
-    height: 4rem;
-    width: 16rem;
-    margin: 0 0.5rem;
+    height: 35px;
+    width: 130px;
+    margin: 0 5px;
     background-color: whitesmoke;
     border: none;
-    border-radius: 0.5rem;
-    font-size: 3rem;
-    color: rgb(109, 109, 109);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: rgb(70, 70, 70);
+}
+.main-googleinput input:hover {
+    box-shadow: 0px 1px 8px 1px rgb(216, 216, 216);
+    border: none;
+}
+.main-buttons button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(216, 216, 216);
 }
 
 .footer {
@@ -84,15 +93,18 @@ main {
     border-top: solid rgb(224, 224, 224) 0.2rem;
     position: absolute;
     bottom: 0;
+    min-width: 320px;
 }
 
 .footer-sectionleft a {
+    display: none;
     text-decoration: none;
     color: rgb(116, 116, 116);
     margin: 0 2rem;
 }
 
 .footer-sectionright a {
+    display: none;
     text-decoration: none;
     color: rgb(116, 116, 116);
     margin: 0 2rem;
@@ -113,9 +125,29 @@ main {
     height: 3.5rem;
 }
 
-.main-buttons button:hover {
-    cursor: pointer;
-    box-shadow: azure;
+@media (min-width: 700px) {
+    .main-googleinput img {
+        height: 150px;
+    }
+    .main-googleinput {
+        margin-top: 80px;
+    }
+    .main-googleinput input {
+        height: 50px;
+        padding-left: 40px;
+    }
+    .footer-sectionleft a {
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(116, 116, 116);
+        margin: 0 2rem;
+    }
+    .footer-sectionright a {
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(116, 116, 116);
+        margin: 0 2rem;
+    }
 }
 
 /*  1. text align: posiciona todos sus elementos como se indique
